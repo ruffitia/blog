@@ -112,159 +112,6 @@
   
             <main>
 
-              <!--
-                <h1>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
-                    <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"/>
-                    </svg>
-                        Come scrivere documenti in LaTeX</h1>
-                <p class="fs-5 col-md-8">Scrivere appunti o documenti su Latex permette 
-                  di avere testi ben scritti, ordinati e senza fronzoli. Nel grafico qua sotto 
-                  è rappresentata la curva di apprendimento di Latex rispetto a word.
-                </p>
-  
-                <br>
-  
-                <p class="fs-5 col-md-8">In un primo momento l’utilizzo di word è nettamente più immediato e veloce 
-                 rispetto al linguaggio latex che vuole una propria sintassi a volte molto stringente, tuttavia
-                  all’aumentare della complessità del testo (per esempio devono essere aggiunte immagini, un indice, 
-                  o formule matematiche, Word potrebbe dare problemi: immagini che si spostano da sole, in determinate 
-                  quantità di tempo sprecate per scrivere una banale equazione ecc.
-                In questi casi LaTeX è molto più efficiente, e permette di avere un lavoro decisamente pulito.
-                </p> 
-
-                <br>
-
-                <hr class="col-3 col-md-2 mb-5">
-
-                <h3>MikTex</h3>
-                <p class="fs-5 col-md-8">Il primo passo per scrivere con LaTex molto velocemente è scaricare MikTex, 
-                    che sarà lo strumento per installare i pacchetti necessari a fare cose particoloari: esiste un 
-                    pacchetto per le formule matematiche, uno per le lettere greche, uno per le immagini, uno per disegnare 
-                    circuiti elettrici, grafici ecc…di pacchetti ne esistono una infinità.
-                </p> 
-
-                <br>
-
-                <h3>TexMaker</h3>
-                <p class="fs-5 col-md-8">TexMaker sarà il nostro compilatore. A sinistra è presente l’editor dentro il quale scriveremo 
-                    il codice. Sotto l’editor è presente la console dentro la quale verranno mostrati gli errori di
-                     sintassi e a destra è presente il pdf che vedremo.
-                    Ora che cosa bisogna scrivere? Prendiamo per esempio il seguente documento scritto dal sottoscritto,
-                     lo analizziamo assieme in modo da vedere passo dopo passo cosa fa ogni singolo riga.
-                </p>
-
-                <br>
-
-                <h3>Overleaf</h3>
-                <p class="fs-5 col-md-8">
-                    Un ottimo strumento per avvicinarsi alla scrittura in LaTeX è il sito Overleaf. Questo è 
-                    completamente gratuito e permette di editare in LaTeX online senza scaricare alcun programma. Inoltre 
-                    Overleaf è ricco di spiegazioni per quanto riguarda pacchetti più comuni per disegnare grafici, oppure 
-                    come inserire immagini in modo particolare. La migliore risorsa per imparare a scrivere in Latex è 
-                    cercare su Google.
-                </p>
-
-                <br>
-
-                <h3>Il "documentclass"</h3>
-                <p class="fs-5 col-md-8">Il “documentclass” indica che tipo di documento stiamo scrivendo. 
-                    Esistono diversi tipi di documentclass. I più utilizzati sono “article” per la scrittura di 
-                    paper scientifici (è implementato in automatico l’abstract), e report che indica un documento 
-                    molto generale.
-                    <br>
-                    \documentclass[a4paper, 12pt]{report}
-                    <br>
-                    All’interno delle parentesi quadre sono presenti le caratteristiche che il documento deve avere: 
-                    foglio A4 e grandezza dei caratteri 12pt. Nelle parentesi graffe invece viene indicata la 
-                    tipologia di documento. Per esempio potrebbe esserci scritto per un paper:
-                    <br>
-                    \documentclass[a4paper]{article} 
-                </p>
-
-                <h3>Usepackage</h3>
-                <p class="fs-5 col-md-8">Il comando “\usepackage” serve a importare pacchetti necessari al vostro documento e quindi utilizzare i loro comandi. Per esempio vediamo \usepackage{amsmath, amssymb, amsthm} necessario per simboli matematici.
-                    \usepackage{pgfplots, relsize, pgfplotstable} è utilizzato per creare grafici, mentre \usepackage{chemformula} per scrivere formule chimiche.</p>
-
-                <br>
-
-                <h3>Inizio del documento</h3>
-                <p class="fs-5 col-md-8">L’inizio del documento è segnato dal comando “\begin{document}” ed è terminato dal comando “\end{document}”. In genere, ogni volta che si utilizza un comando con la dicitura “\begin” è necessaria alla fine la controparte “\end”.</p>
-
-                <br>
-
-                <h3>Indice e personalizzazione</h3>
-                <p class="fs-5 col-md-8">Un ottimo strumento per la creazione di un indice è l’utilizzo del comando “\tableofcontents” proveniente dal pacchetto…
-                    Come detto prima esistono infiniti modi di personalizzazione del vostro documento. Dei comandi molto utili da mettere subito dopo il comando “\begin{document}” sono i seguenti:
-                    
-                    \pagestyle{fancy}
-                    \fancyhf{}
-                    \rhead{Mattia Ruffini}
-                    \lhead{Fondamenti di Chimica}
-                    \rfoot{Pagina \thepage}
-                    
-                    che riportano alcune indicazioni sulla pagina.
-                    </p>
-
-                <br>
-
-                <h3>Comandi utili</h3>
-                <p class="fs-5 col-md-8">I comandi più utili e che spesso dovrete utilizzare per struttura un bel documento sono i comandi che indicano i capitoli, le sezioni ecc. In ordine di importanza sono:
-                    \chapter{Nome Capitolo}
-                        \section{Nome Sezione{}
-                            \subsection{Nome Sotto-sezione}
-                                \paragraph{Nome Paragrafo}
-                                    \subparagraph{Nome Sottoparagrafo}
-                
-                Altri comandi utili sono la creazione di liste enumerate:
-                \begin{enumerate}
-                \end{enumerate}
-                
-                o senza enumerazione
-                
-                \begin{itemize}
-                \end{itemize}
-                </p>
-
-                <br>
-                <h3>Immagini</h3>
-
-                <p class="fs-5 col-md-8">Per aggiungere le immagini al vostro documento dovrete utilizzare diversi pacchetti che elencherò qui sotto:
-
-                    \usepackage{tikz}
-                    \usepackage{graphicx}
-                    \usepackage{fancyhdr}
-                    \usepackage{subfig}
-                    \usepackage[labelformat=empty]{caption}
-                    \usepackage{float}
-                    \usepackage{wrapfig}
-                    
-                    che permettono di fare diverse cose. Per inserire un’immagine esistono diversi modi (consultate Overleaf perchè su questo non sono molto ferrato). Potete utilizzare questa dicitura:
-                    
-                    \begin{figure}[h!]
-                    \centering
-                    \includegraphics[scale=0.6]{ciclo3.png}
-                    \caption{Ciclo termochimico della reazione}
-                    \end{figure}
-                    
-                    dove centering mette l’immagine al centro, \caption permette di scrivere la caption all’immagine. 
-                    Il comando  \includegraphics[scale=0.6]{ciclo3.png} è quello che importa l’immagine, che deve essere 
-                    nella stessa cartella del file .tex (il file con la scrittura di LaTeX). La dicitura “scale” permette di modificare 
-                    la scala delle immagini.
-                </p>
-
-                <p>Per darvi l’idea, ecco come un documento finale potrebbe venire. In questo caso appunti di Analisi 1 
-                    e Chimica.
-                </p>
-
-                -->
-
-
-
-                <!--
-                <p class="fs-5 col-md-8"></p>
-                -->
-
                 <!--Blog Inizio-->
 
                 <div class="container">
@@ -280,56 +127,88 @@
                           </h1>
                   
                           <div class="d-flex align-items-center mb-4 text-muted author-info">
-                    <!--
-                    <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-                      <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x" src="https://github.com/mdo.png?size=32" alt="" width="32" height="32">
-                      <span>ruffitia</span>
-                    </a>
-                  -->
-                    <span class="d-flex align-items-center ml-3" title="Mon, 24 Feb 2022 00:00:00 +0000">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
-                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"></path>
-                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
-                  </svg>
+                           <!--
+                            <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+                            <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x" src="https://github.com/mdo.png?size=32" alt="" width="32" height="32">
+                            <span>ruffitia</span>
+                            </a>
+                          -->
+                          <span class="d-flex align-items-center ml-3" title="Mon, 24 Feb 2022 00:00:00 +0000">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+                          <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"></path>
+                          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
+                          </svg>
                   
-                      January 31, 2022
-                    </span>
-                  </div>
+                          Febbraio 25, 2022
+                          </span>
+                          </div>
                   
-                  <h2>Cos' è LaTeX</h2>
-                  <p class="fs-5 col-md-8"> <strong>LaTeX</strong> è un tipo di scrittura per cui è possibile creare documenti di testo
-                    ben costruiti e ordinati. A differenza del classico Word Office il sistema LaTeX si basa su una filosofia
-                    completamente differente. Word ha un tipo di scrittura che si basa sul paradigma <strong>WYSIWYG</strong>
-                    ovvero "<strong>What You See Is What You Get</strong>" ovvero letteralmente "ciò che vedi è ciò che ottieni". In particolaresu Word 
-                    il documento che otteniamo è subordinato a come noi <strong>scegliamo di posizionare il testo o le immagini</strong>, grazie
-                    a delle impostazioni che il programma offre. Invece LaTeX si basa su un paradigma  del tipo "<strong>WYSIWYM</strong>, <strong>What
-                    You See Is What You Mean</strong>", ovvero quello che otteniamo non lo "vediamo graficamente" ma lo scegliamo testyalmente. 
-                    Infatti la grande differenza tra Word e LaTeX è il fatto che in LaTeX la parte grafica è comandata da una serie di comandi 
-                    scritti in un file ".tex" da cui deriva il file ".pdf" . Per questo motivo la difficoltà iniziale di chi inizia a scrivere in LaTex
-                    è la poca intuitività a cui siamo abituati fin da piccoli. Qua sotto un grafico che riassume quello che accade 
-                    quando si scrive in LaTeX o in Word.
+                          <h2>Cos' è LaTeX</h2>
+                          <p class="fs-5 col-md-8"> <strong>LaTeX</strong> è un tipo di scrittura per cui è possibile creare documenti di testo
+                          ben costruiti e ordinati. A differenza del classico Word Office il sistema LaTeX si basa su una filosofia
+                          completamente differente. Word ha un tipo di scrittura che si basa sul paradigma <strong>WYSIWYG</strong>
+                          ovvero "<strong>What You See Is What You Get</strong>" ovvero letteralmente "ciò che vedi è ciò che ottieni". In particolaresu Word 
+                          il documento che otteniamo è subordinato a come noi <strong>scegliamo di posizionare il testo o le immagini</strong>, grazie
+                          a delle impostazioni che il programma offre. Invece LaTeX si basa su un paradigma  del tipo "<strong>WYSIWYM</strong>, <strong>What
+                          You See Is What You Mean</strong>", ovvero quello che otteniamo non lo "vediamo graficamente" ma lo scegliamo testyalmente. 
+                          Infatti la grande differenza tra Word e LaTeX è il fatto che in LaTeX la parte grafica è comandata da una serie di comandi 
+                          scritti in un file ".tex" da cui deriva il file ".pdf" . 
+                          <br>
+                          Per questo motivo la difficoltà iniziale di chi inizia a scrivere in LaTex
+                          è la poca intuitività a cui siamo abituati fin da piccoli. Qua sotto un grafico che riassume quello che accade 
+                          quando si scrive in LaTeX o in Word.
 
-                    <br>
+                          <br>
 
-                    <img src="https://pbs.twimg.com/media/EOU2gFfWsAMOXVe.png" alt="plot complexity-time">
+                          <img src="https://pbs.twimg.com/media/EOU2gFfWsAMOXVe.png" alt="plot complexity-time" width="500" height="300">
 
-                    <br>
+                          <br>
 
-                    Questo grafico è così perchè in certe operazioni LaTex <strong>è estremamente più efficente</strong>. Sono operazioni
-                    di dicitura di equazioni matematiche, disegno di grafici, disegno di circuiti elettrici, ma permette anche una gestione
-                    migliore del documento, per esempio aggiorna i numeri dei paragrafi o capitoli in modo automatico, senza cambiarli manualmente, e in
-                    un documento di decine di pagine questo fa la differenza.
-                  </p>
+                          Questo grafico è così perchè in certe operazioni LaTex <strong>è estremamente più efficente</strong>. Sono operazioni
+                          di dicitura di equazioni matematiche, disegno di grafici, disegno di circuiti elettrici, ma permette anche una gestione
+                          migliore del documento, per esempio aggiorna i numeri dei paragrafi o capitoli in modo automatico, senza cambiarli manualmente, e in
+                          un documento di decine di pagine questo fa la differenza.
+                          </p>
                   
-                 <h2>Come approcciarsi a LaTeX</h2>
-                  <p class="fs-5 col-md-8">
-                    Per chi inizia a utilizzare LaTex il primo consiglio è quello di sperimentare su <a href="">Overleaf</a>, uno strumento 
-                    web gratuito che permette di editare un file ".tex" e produrre un file ".pdf". Su Overleaf inoltre sono presenti un sacco di 
-                    tutorial con esempi per fare diverse personalizzazioni. Il secondo strumento più importante è Google: i problemi con cui vi scontrate probabilmente
-                    sono stati già affrontati da altri, dunque cercare risposte molto specifiche (googolando in inglese) quasi sempre porta ad una 
-                    risouzione del vostro problema.
-                  </p>
+                          <h2>Come approcciarsi a LaTeX</h2>
+                          <p class="fs-5 col-md-8">
+                          Per chi inizia a utilizzare LaTex il primo consiglio è quello di sperimentare su <a href="https://www.overleaf.com/">Overleaf</a>, uno strumento 
+                          web gratuito che permette di editare un file ".tex" e produrre un file ".pdf". Su Overleaf inoltre sono presenti un sacco di 
+                          tutorial con esempi per fare diverse personalizzazioni. 
+                          <br>
+                          Il secondo strumento più importante è Google: i problemi con cui vi scontrate probabilmente
+                          sono stati già affrontati da altri, dunque cercare risposte molto specifiche (googolando in inglese) quasi sempre porta ad una 
+                          risouzione del vostro problema.
+                          </p>
                   
+                          <h2>Cosa installare sul computer</h2>
+                  
+
+                          <h2>I comandi più importanti</h2>
+
+                          <h4>Documentclass</h4>
+
+                          <h4>Usepackage</h4>
+
+                          <h4>Inizio del documento</h4>
+
+                          <h4>Indice e personalizzazione</h4>
+
+                          <h4>Comandi molto utili</h4>
+
+                          <h4>Immagini</h4>
+
+                          <p>
+                            I pacchetti che devono essere installati per poter inserire le immagini sono <strong>graphicx</strong> e da installare scrivendo
+                            nel pre-document:
+                            <pre>
+                              <code>
+                                \usepackage{graphicx}
+                              </code>
+                            </pre>
+                          </p>
+
+
                     </div>
                   </div>
                 </div>

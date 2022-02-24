@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.88.1">
+        <title>Home-Page</title>
+    
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/starter-template/">
+    
+        
+    
+        <!-- Bootstrap core CSS -->
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+        <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+    
+    
+        <style>
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+          }
+    
+          @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          }
+        </style>
+    
+        <!--My css-->  
+        <link rel="stylesheet" href="styles.css">  
+
+        <!-- Custom styles for this template -->
+        <link href="starter-template.css" rel="stylesheet">
+      </head>
+      <body>
+
+        <!--Ho spostato qua la navbar-->
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"></path>
+              </svg>
+              Home-Page
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a href="https://www.youtube.com/watch?v=Rt2AIZrxUnk&ab_channel=Tony2Milli-Topic" class="nav-link text-white" target="_blank">Cool stuff
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-end-btn" viewBox="0 0 16 16">
+                      <path d="M6.79 5.093 9.5 7.028V5.5a.5.5 0 0 1 1 0v5a.5.5 0 0 1-1 0V8.972l-2.71 1.935A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .79-.407z"></path>
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="appunti.html" class="nav-link text-white" target="_blank">Appunti Ingegneria 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                      <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="links.html" class="nav-link text-white" target="_blank">Links
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-fill" viewBox="0 0 16 16">
+                      <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z"></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"  class="nav-link text-white"> <!--Provio a togliere la dicitura ' class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"'-->
+                    <img src="https://ik.imagekit.io/bayc/assets/ape3.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong><a href="https://instagram.com/fusruu?utm_medium=copy_link" class="nav-link text-white" target="_blank">ruffitia</a></strong>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!--Main Page--> 
+        <div class="col-lg-8 mx-auto p-3 py-md-5" > 
+
+            <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+              <!--
+              <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>ruffitia</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+                <span class="fs-4">Home-Page</span>
+              </a>
+            -->
+            </header>
+  
+            <main>
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                    <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"/>
+                    </svg>
+                        Come scrivere documenti in LaTeX</h1>
+                <p class="fs-5 col-md-8">Scrivere appunti o documenti su Latex permette 
+                  di avere testi ben scritti, ordinati e senza fronzoli. Nel grafico qua sotto 
+                  è rappresentata la curva di apprendimento di Latex rispetto a word.
+                </p>
+  
+                <br>
+  
+                <p class="fs-5 col-md-8">In un primo momento l’utilizzo di word è nettamente più immediato e veloce 
+                 rispetto al linguaggio latex che vuole una propria sintassi a volte molto stringente, tuttavia
+                  all’aumentare della complessità del testo (per esempio devono essere aggiunte immagini, un indice, 
+                  o formule matematiche, Word potrebbe dare problemi: immagini che si spostano da sole, in determinate 
+                  quantità di tempo sprecate per scrivere una banale equazione ecc.
+                In questi casi LaTeX è molto più efficiente, e permette di avere un lavoro decisamente pulito.
+                </p> 
+
+                <br>
+
+                <hr class="col-3 col-md-2 mb-5">
+
+                <h3>MikTex</h3>
+                <p class="fs-5 col-md-8">Il primo passo per scrivere con LaTex molto velocemente è scaricare MikTex, 
+                    che sarà lo strumento per installare i pacchetti necessari a fare cose particoloari: esiste un 
+                    pacchetto per le formule matematiche, uno per le lettere greche, uno per le immagini, uno per disegnare 
+                    circuiti elettrici, grafici ecc…di pacchetti ne esistono una infinità.
+                </p> 
+
+                <br>
+
+                <h3>TexMaker</h3>
+                <p class="fs-5 col-md-8">TexMaker sarà il nostro compilatore. A sinistra è presente l’editor dentro il quale scriveremo 
+                    il codice. Sotto l’editor è presente la console dentro la quale verranno mostrati gli errori di
+                     sintassi e a destra è presente il pdf che vedremo.
+                    Ora che cosa bisogna scrivere? Prendiamo per esempio il seguente documento scritto dal sottoscritto,
+                     lo analizziamo assieme in modo da vedere passo dopo passo cosa fa ogni singolo riga.
+                </p>
+
+                <br>
+
+                <h3>Overleaf</h3>
+                <p class="fs-5 col-md-8">
+                    Un ottimo strumento per avvicinarsi alla scrittura in LaTeX è il sito Overleaf. Questo è 
+                    completamente gratuito e permette di editare in LaTeX online senza scaricare alcun programma. Inoltre 
+                    Overleaf è ricco di spiegazioni per quanto riguarda pacchetti più comuni per disegnare grafici, oppure 
+                    come inserire immagini in modo particolare. La migliore risorsa per imparare a scrivere in Latex è 
+                    cercare su Google.
+                </p>
+
+                <br>
+
+                <h3>Il "documentclass"</h3>
+                <p class="fs-5 col-md-8">Il “documentclass” indica che tipo di documento stiamo scrivendo. 
+                    Esistono diversi tipi di documentclass. I più utilizzati sono “article” per la scrittura di 
+                    paper scientifici (è implementato in automatico l’abstract), e report che indica un documento 
+                    molto generale.
+                    <br>
+                    \documentclass[a4paper, 12pt]{report}
+                    <br>
+                    All’interno delle parentesi quadre sono presenti le caratteristiche che il documento deve avere: 
+                    foglio A4 e grandezza dei caratteri 12pt. Nelle parentesi graffe invece viene indicata la 
+                    tipologia di documento. Per esempio potrebbe esserci scritto per un paper:
+                    <br>
+                    \documentclass[a4paper]{article} 
+                </p>
+
+                <h3>Usepackage</h3>
+                <p class="fs-5 col-md-8">Il comando “\usepackage” serve a importare pacchetti necessari al vostro documento e quindi utilizzare i loro comandi. Per esempio vediamo \usepackage{amsmath, amssymb, amsthm} necessario per simboli matematici.
+                    \usepackage{pgfplots, relsize, pgfplotstable} è utilizzato per creare grafici, mentre \usepackage{chemformula} per scrivere formule chimiche.</p>
+
+                <br>
+
+                <h3>Inizio del documento</h3>
+                <p class="fs-5 col-md-8">L’inizio del documento è segnato dal comando “\begin{document}” ed è terminato dal comando “\end{document}”. In genere, ogni volta che si utilizza un comando con la dicitura “\begin” è necessaria alla fine la controparte “\end”.</p>
+
+                <br>
+
+                <h3>Indice e personalizzazione</h3>
+                <p class="fs-5 col-md-8">Un ottimo strumento per la creazione di un indice è l’utilizzo del comando “\tableofcontents” proveniente dal pacchetto…
+                    Come detto prima esistono infiniti modi di personalizzazione del vostro documento. Dei comandi molto utili da mettere subito dopo il comando “\begin{document}” sono i seguenti:
+                    
+                    \pagestyle{fancy}
+                    \fancyhf{}
+                    \rhead{Mattia Ruffini}
+                    \lhead{Fondamenti di Chimica}
+                    \rfoot{Pagina \thepage}
+                    
+                    che riportano alcune indicazioni sulla pagina.
+                    </p>
+
+                <br>
+
+                <h3>Comandi utili</h3>
+                <p class="fs-5 col-md-8">I comandi più utili e che spesso dovrete utilizzare per struttura un bel documento sono i comandi che indicano i capitoli, le sezioni ecc. In ordine di importanza sono:
+                    \chapter{Nome Capitolo}
+                        \section{Nome Sezione{}
+                            \subsection{Nome Sotto-sezione}
+                                \paragraph{Nome Paragrafo}
+                                    \subparagraph{Nome Sottoparagrafo}
+                
+                Altri comandi utili sono la creazione di liste enumerate:
+                \begin{enumerate}
+                \end{enumerate}
+                
+                o senza enumerazione
+                
+                \begin{itemize}
+                \end{itemize}
+                </p>
+
+                <br>
+                <h3>Immagini</h3>
+
+                <p class="fs-5 col-md-8">Per aggiungere le immagini al vostro documento dovrete utilizzare diversi pacchetti che elencherò qui sotto:
+
+                    \usepackage{tikz}
+                    \usepackage{graphicx}
+                    \usepackage{fancyhdr}
+                    \usepackage{subfig}
+                    \usepackage[labelformat=empty]{caption}
+                    \usepackage{float}
+                    \usepackage{wrapfig}
+                    
+                    che permettono di fare diverse cose. Per inserire un’immagine esistono diversi modi (consultate Overleaf perchè su questo non sono molto ferrato). Potete utilizzare questa dicitura:
+                    
+                    \begin{figure}[h!]
+                    \centering
+                    \includegraphics[scale=0.6]{ciclo3.png}
+                    \caption{Ciclo termochimico della reazione}
+                    \end{figure}
+                    
+                    dove centering mette l’immagine al centro, \caption permette di scrivere la caption all’immagine. 
+                    Il comando  \includegraphics[scale=0.6]{ciclo3.png} è quello che importa l’immagine, che deve essere 
+                    nella stessa cartella del file .tex (il file con la scrittura di LaTeX). La dicitura “scale” permette di modificare 
+                    la scala delle immagini.
+                </p>
+
+                <p>Per darvi l’idea, ecco come un documento finale potrebbe venire. In questo caso appunti di Analisi 1 
+                    e Chimica.
+                </p>
+
+
+
+                <!--
+                <p class="fs-5 col-md-8"></p>
+                -->
+
+                <!--Blog type-->
+
+                <div class="container">
+      
+                  <div class="posts-container mx-auto px-3 my-5">
+                    <div class="posts">
+                      <div class="post">
+                          <h1 class="post-title fw-500">
+                            <a href="/2022/01/31/bootstrap-icons-1-8-0/">
+                              Bootstrap Icons v1.8.0
+                            </a>
+                          </h1>
+                  
+                          <div class="d-flex align-items-center mb-4 text-muted author-info">
+                    <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+                      <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x" src="https://github.com/mdo.png?size=32" alt="" width="32" height="32">
+                      <span>@mdo</span>
+                    </a>
+                    <span class="d-flex align-items-center ml-3" title="Mon, 31 Jan 2022 00:00:00 +0000">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"></path>
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
+                  </svg>
+                  
+                      January 31, 2022
+                    </span>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/HhZaHf8RP6g?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen=""></iframe>
+                  </div>
+                  
+                  
+                          <p><a href="https://icons.getbootstrap.com">Bootstrap Icons v1.8.0</a> is here with over 140 new icons, including dozens of new heart icons ready for Valentine’s Day and dozens of filetype icons. We’re now at almost 1,700 icons and is once again our second largest release. Keep reading to see what’s new.</p>
+                  <h2 id="140-new-icons">140+ new icons</h2>
+                  <p>Perfect for Valentine’s Day or any other time you need to show a little heart, there are dozens of icons to choose from.</p>
+                  <img src="/assets/img/2022/01/icons-v180-love.png" alt="New love icons in v1.8.0" style="border: 1px solid rgba(0,0,0,.15);">
+                  <p>Want to visually show the extensions of your files? There are tons of new options for programming languages, audio and video, images, and more.</p>
+                  <img src="/assets/img/2022/01/icons-v180-filetypes.png" alt="New filetype icons in v1.8.0" style="border: 1px solid rgba(0,0,0,.15);">
+                  <p>Elsewhere we’ve expanded a number of other categories of icons. There are some new medical icons (more are planned), lots of new clipboard icons, additional tools, and more.</p>
+                  <img src="/assets/img/2022/01/icons-v180-misc.png" alt="Miscellaneous new icons in v1.8.0" style="border: 1px solid rgba(0,0,0,.15);">
+                  <p><em>Looking for more new icons? Head to the <a href="https://github.com/twbs/icons/issues">issue tracker</a> to check for open requests or submit a new one.</em></p>
+                  <h2 id="install">Install</h2>
+                  <p>To get started, install or update via npm:</p>
+                  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">npm i bootstrap-icons
+                  </code></pre></div><p>Or Composer:</p>
+                  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">composer require twbs/bootstrap-icons
+                  </code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.8.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.8.0/bootstrap-icons-1.8.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
+                  <h2 id="figma">Figma</h2>
+                  <p>The Figma file is now published to the Figma Community! It’s the same <a href="https://www.figma.com/community/file/1042482994486402696/Bootstrap-Icons">Bootstrap Icons Figma file</a> you’ve seen from previous releases, just a little more accessible to those using the app.</p>
+                  
+                        </div><div class="post">
+                          <h1 class="post-title fw-500">
+                            <a href="/2021/11/01/bootstrap-icons-1-7-0/">
+                              Bootstrap Icons v1.7.0
+                            </a>
+                          </h1>
+                  
+                          <div class="d-flex align-items-center mb-4 text-muted author-info">
+                    <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+                      <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x" src="https://github.com/mdo.png?size=32" alt="" width="32" height="32" loading="lazy">
+                      <span>@mdo</span>
+                    </a>
+                    <span class="d-flex align-items-center ml-3" title="Mon, 01 Nov 2021 00:00:00 +0000">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"></path>
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
+                  </svg>
+                  
+                      November 01, 2021
+                    </span>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/CqZgd6-xQl8?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen=""></iframe>
+                  </div>
+                  
+                  
+                          <p><a href="https://icons.getbootstrap.com">Bootstrap Icons v1.7.0</a> is here with 120 new and updated icons, taking us over 1,500 total icons for the project! It’s the largest update since the initial release, so keep reading to see what’s new.</p>
+                  <h2 id="120-new-icons">120 new icons</h2>
+                  <p>This update was a lot of fun for me—drawing all these tiny computer parts most of all! There are dozens of new computer-related icons for parts, ports, and peripheral devices. There are also several new brand icons, including Meta, and some other fun icons like a new robot head and a boombox.</p>
+                  <img src="/assets/img/2021/11/icons-v170.png" alt="New icons in v1.7.0" style="border: 1px solid rgba(0,0,0,.15);">
+                  <p><em>Looking for more new icons? Head to the <a href="https://github.com/twbs/icons/issues">issue tracker</a> to check for open requests or submit a new one.</em></p>
+                  <h2 id="install">Install</h2>
+                  <p>To get started, install or update via npm:</p>
+                  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">npm i bootstrap-icons
+                  </code></pre></div><p>Or Composer:</p>
+                  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">composer require twbs/bootstrap-icons
+                  </code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.7.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.7.0/bootstrap-icons-1.7.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
+                  <h2 id="figma">Figma</h2>
+                  <p>The Figma file is now published to the Figma Community! It’s the same <a href="https://www.figma.com/file/cKgRyErzl4pR1WN4NcB5lv/Bootstrap-Icons">Bootstrap Icons Figma file</a> you’ve seen from previous releases, just a little more accessible to those using the app.</p>
+                  
+                        </div><div class="post">
+                          <h1 class="post-title fw-500">
+                            <a href="/2021/10/28/bootstrap-4.6.1/">
+                              Bootstrap v4.6.1
+                            </a>
+                          </h1>
+                  
+                          <div class="d-flex align-items-center mb-4 text-muted author-info">
+                    <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+                      <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x" src="https://github.com/mdo.png?size=32" alt="" width="32" height="32" loading="lazy">
+                      <span>@mdo</span>
+                    </a>
+                    <span class="d-flex align-items-center ml-3" title="Thu, 28 Oct 2021 21:30:00 +0000">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"></path>
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
+                  </svg>
+                  
+                      October 28, 2021
+                    </span>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/wBl2QGAIx1s?rel=0&amp;start=135" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen=""></iframe>
+                  </div>
+                  
+                  
+                          <p>Bootstrap v4.6.1 has finally arrived! Biggest change here is a re-implementation of our Sass division functions and updates from v5, as well as some accessibility improvements and general bug fixes.</p>
+                  <p>Read on for the highlights or <a href="https://getbootstrap.com/docs/4.6/">head to the v4.6.x docs</a> to see the latest in action.</p>
+                  <h2 id="whats-changed">What’s changed</h2>
+                  <ul>
+                  <li>Replace Sass division with multiplication and custom <code>divide()</code> function</li>
+                  <li>fix(forms): input-group and validation icons</li>
+                  <li>Fix minor visual bug in FF caused by moz-focusring</li>
+                  <li>Adjust <code>SAFE_URL_PATTERN</code> regex for use with test method of regexes</li>
+                  <li>Add <code>sms</code> in the <code>SAFE_URL_PATTERN</code> for sanitizer</li>
+                  <li>Adjust feedback icon position and padding for <code>select.form-control</code></li>
+                  <li>Carousel: use buttons, not links, for prev/next controls</li>
+                  <li>v4: Sass docs for default variables</li>
+                  <li>Handle complex expressions in <code>add()</code> &amp; <code>subtract()</code></li>
+                  <li>More concise improvements for <code>add()</code> and <code>subtract()</code></li>
+                  <li>Remove aria-haspopup from dropdowns</li>
+                  <li>Dropdown: support <code>.dropdown-item</code> wrapped in <code>&lt;li&gt;</code> tags</li>
+                  <li>Update Node versions in JS tests (drop Node 10, add Node 16) and add variables for <code>vertical-align</code> in spinners</li>
+                  <li>Replace Freenode with Libera IRC server</li>
+                  <li>Fix repetition in the Navbar docs description</li>
+                  <li>Enable <code>0.x</code> with negative margins in utilities</li>
+                  <li>Remove print <code>thead</code> rule</li>
+                  <li>Fix prevented <code>show</code> event disabling modals with fade class from being displayed again</li>
+                  <li>Input group validation with custom-file input</li>
+                  <li>Add eslint-plugin-qunit and tighten JS tests</li>
+                  <li>Update our tests to Node 16 and npm 8</li>
+                  <li>Disabled link cleanup</li>
+                  </ul>
+                  <p><a href="https://github.com/twbs/bootstrap/releases/tag/v4.6.1">Review the GitHub v4.6.1 release changelog</a> for more details.</p>
+                  <h2 id="next-up">Next up</h2>
+                  <p>We’ll be flipping back to v5 development after this release, focusing on v5.2.0 with some additional updates to using more CSS variables and other awesome features. Sometime after that, we hope to ship a v4.7.0 release with some additional backported features and improvements to v4.</p>
+                  <p>Please keep the feedback coming on what we can improve, how our releases are performing, and any other suggestions.</p>
+                  <h2 id="support-the-team">Support the team</h2>
+                  <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>' GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+                  
+                        </div><div class="post">
+                          <h1 class="post-title fw-500">
+                            <a href="/2021/10/13/bootstrap-icons-1-6-0/">
+                              Bootstrap Icons v1.6.0
+                            </a>
+                          </h1>
+                  
+                          <div class="d-flex align-items-center mb-4 text-muted author-info">
+                    <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+                      <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x" src="https://github.com/mdo.png?size=32" alt="" width="32" height="32" loading="lazy">
+                      <span>@mdo</span>
+                    </a>
+                    <span class="d-flex align-items-center ml-3" title="Wed, 13 Oct 2021 00:00:00 +0000">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"></path>
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
+                  </svg>
+                  
+                      October 13, 2021
+                    </span>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/sOS9aOIXPEk?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen=""></iframe>
+                  </div>
+                  
+                  
+                          <p><a href="https://icons.getbootstrap.com">Bootstrap Icons v1.6.0</a> adds over 30 new icons, adds official Composer support, includes a new <code>.scss</code> stylesheet for the icon font, plus some other enhancements and bug fixes. Keep reading to see what’s new!</p>
+                  <h2 id="1400-icons">1,400+ icons</h2>
+                  <p>We’ve officially passed 1,400 glyphs in Bootstrap Icons with this release—woohoo! Seems utterly insane to me that the project has come this far and there are still so many more icons to include.</p>
+                  <img src="/assets/img/2021/10/v160-new-updated-icons.png" alt="New icons in v1.6.0" style="border: 1px solid rgba(0,0,0,.15);">
+                  <p>We have a few dozen new and updated icons in this release, including:</p>
+                  <ul>
+                  <li>New brand icons for Apple, Behance, Dribbble, Line, Medium, Microsoft, PayPal, Pinterest, Signal, Snapchat, Spotify, Stack Overflow, Strava, Vimeo, Windows, and WordPress</li>
+                  <li>Two new easel variations</li>
+                  <li>New fingerprint icon</li>
+                  <li>New magic stick</li>
+                  <li>New people variations for rolodex, workspace, and video chat</li>
+                  <li>New webcam icons</li>
+                  <li>New radioactive icon</li>
+                  <li>New fan icon</li>
+                  <li>New hypnotize icon</li>
+                  <li>New yin yang icon</li>
+                  <li>New activity/pulse icon</li>
+                  <li>Updated large dash, plus, slash, x, i, ?, !, and check icons to have a thinner stroke that better matches other icons</li>
+                  <li>Updated lamp icons</li>
+                  <li>Updated <code>graph-up</code> and <code>graph-down</code> icons, with the previous ones being renamed to <code>graph-up-arrow</code> and <code>graph-down-arrow</code></li>
+                  </ul>
+                  <h2 id="new-features">New features</h2>
+                  <p>We’ve added a handful of new features and enhancements to how you can use Bootstrap Icons in this release:</p>
+                  <ul>
+                  <li>
+                  <p><strong>Added Composer support</strong> with automatic publishing to Packagist. See the <a href="https://packagist.org/packages/twbs/bootstrap-icons">official package</a> for more information.</p>
+                  </li>
+                  <li>
+                  <p><strong>Added new <code>bootstrap-icons.scss</code> stylesheet for the icon font.</strong> This includes font name and path variables, plus a Sass map of icon names and unicode values.</p>
+                  </li>
+                  <li>
+                  <p><strong>Added new <code>.bi</code> CSS selector</strong> to the icon font ruleset (in addition to the attribute selectors we had through v1.5.0) to allow for easier <code>@extend</code>ing of icon styles. This has also been reflected in the new <code>.scss</code> stylesheet.</p>
+                  </li>
+                  </ul>
+                  <p>Our next minor release will continue to see improvements to our icon permalink pages, adding more options for copying and pasting our icons. If you have other suggestions, please don’t hesitate to open a new issue!</p>
+                  <h2 id="bug-fixes">Bug fixes</h2>
+                  <p>We’ve fixed a few glitches with existing icons in this release:</p>
+                  <ul>
+                  <li><code>droplet-fill</code> now renders correctly thanks to an updated fill rule</li>
+                  <li><code>lamp</code> and <code>lamp-fill</code> now look more like lamps and less like toilets 😅</li>
+                  <li><code>coin</code> now renders correctly thanks to an updated fill rule</li>
+                  <li><code>cloud</code> now renders correctly thanks to an updated fill rule</li>
+                  <li><code>textarea-resize</code> is no longer incorrectly placed in the <code>viewBox</code></li>
+                  </ul>
+                  <p>Found another bug, or have a suggestion? Check out the issue tracker and open an issue if you don’t see one already opened.</p>
+                  <h2 id="install">Install</h2>
+                  <p>To get started, install or update via npm:</p>
+                  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">npm i bootstrap-icons
+                  </code></pre></div><p>Or Composer:</p>
+                  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">composer require twbs/bootstrap-icons
+                  </code></pre></div><p>You can also <a href="https://github.com/twbs/icons/releases/tag/v1.6.0">download the release from GitHub</a>, or <a href="https://github.com/twbs/icons/releases/download/v1.6.0/bootstrap-icons-1.6.0.zip">download just the SVGs and fonts</a> (without the rest of the repository files).</p>
+                  <h2 id="figma">Figma</h2>
+                  <p>The Figma file is now published to the Figma Community! It’s the same <a href="https://www.figma.com/file/cKgRyErzl4pR1WN4NcB5lv/Bootstrap-Icons">Bootstrap Icons Figma file</a> you’ve seen from previous releases, just a little more accessible to those using the app.</p>
+                  
+                        </div><div class="post">
+                          <h1 class="post-title fw-500">
+                            <a href="/2021/10/05/bootstrap-5-1-2/">
+                              Bootstrap 5.1.2
+                            </a>
+                          </h1>
+                  
+                          <div class="d-flex align-items-center mb-4 text-muted author-info">
+                    <a class="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+                      <img class="mb-0 mr-2" srcset="https://github.com/mdo.png?size=32, https://github.com/mdo.png?size=64 2x" src="https://github.com/mdo.png?size=32" alt="" width="32" height="32" loading="lazy">
+                      <span>@mdo</span>
+                    </a>
+                    <span class="d-flex align-items-center ml-3" title="Tue, 05 Oct 2021 00:00:00 +0000">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mr-2" viewBox="0 0 16 16" role="img" fill="currentColor">
+                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"></path>
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"></path>
+                  </svg>
+                  
+                      October 05, 2021
+                    </span>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item lazy" data-src="https://www.youtube-nocookie.com/embed/HoQN7K6HdRw?rel=0" title="YouTube Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="760" height="570" allowfullscreen=""></iframe>
+                  </div>
+                  
+                  
+                          <p>Bootstrap v5.1.2 is here with a handful of improvements across our components, plus a fix for an issue in another project that prevented our Sass from compiling properly. Keep reading for the highlights.</p>
+                  <h2 id="highlights">Highlights</h2>
+                  <ul>
+                  <li>Temporarily patched a <a href="https://github.com/shellscape/postcss-values-parser/issues/138">postcss-values-parser</a> issue by rearranging our <code>calc()</code> functions that use negative numbers. This should restore the ability to import and compile Bootstrap’s Sass in <code>create-react-app</code>.</li>
+                  <li>Added <code>border-radius</code> sizes to small and large <code>.form-select</code>s</li>
+                  <li>Added <code>align-self: center</code> to buttons for improved rendering in flex containers</li>
+                  <li>Fixed Collapse regression that prevented toggling between sibling children</li>
+                  <li>Updated JS Sanitizer to add <code>sms</code> in the <code>SAFE_URL_PATTERN</code></li>
+                  <li>Improved docs around <code>.img-fluid</code></li>
+                  <li>Added <code>role="switch"</code> to our form switches in our docs</li>
+                  <li>Implemented GitHub Issue forms to replace our previous issue templates.</li>
+                  </ul>
+                  <h2 id="up-next">Up next</h2>
+                  <p>Up next is our v5.2.0 release, adding more utility improvements and fixing an issue with how <a href="https://github.com/twbs/bootstrap/issues/34756">Sass handles re-assigned maps and variables</a>. Alongside that, we’ll be shipping an update to v4 soon as well.</p>
+                  <h2 id="get-the-release">Get the release</h2>
+                  <p><strong>Head to <a href="https://getbootstrap.com">https://getbootstrap.com</a> for the latest.</strong> It’s also been pushed to npm:</p>
+                  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">npm i bootstrap
+                  </code></pre></div><p><a href="https://github.com/twbs/bootstrap/releases/tag/v5.1.2">Review the GitHub v5.1.2 release changelog</a> for a complete list of changes since our last release.</p>
+                  <h2 id="support-the-team">Support the team</h2>
+                  <p>Visit our <a href="https://opencollective.com/bootstrap">Open Collective page</a> or our <a href="https://github.com/orgs/twbs/people">team members</a>' GitHub profiles to help support the maintainers contributing to Bootstrap.</p>
+                  
+                        </div>
+                    </div>
+                  
+                    <div class="pagination"><a class="pagination-item older" href="/page/2/">Older</a>
+                      <span class="pagination-item newer">Newer</span>
+                    </div>
+                  </div>
+                      </div>
+
+                  <!--Blog fine-->
+
+                <hr class="col-3 col-md-2 mb-5">
+            </main>
+            <footer class="pt-5 my-5 text-muted border-top">
+                ruffitia · © 2021
+            </footer>
+        </div>
+                <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        </body>
+</html>
